@@ -1,29 +1,31 @@
+/*imported fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 *
-{
+{ /*default padding and margin for all elements*/
     padding: 0;
     margin: 0;
 }
-body{
+body{ /*styling for the entire body of each pages*/
     width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction:column;
     background-color: #D2E6D2;
 }
-.section{
+.section{ /*styling for the sections in the body*/
     width: 100vw;
     height: 100vh;
 }
-#bgvid {
+#bgvid { /*styling for the background video of page 1 & 2*/
     width: 100vw;
     height: 100vh;
     object-fit: cover;
     position: fixed;
     z-index: -1;
 }
-header{
+/*styling for the navigation bar*/
+header{ 
     width: 100vw;
     position: fixed;
     z-index: 1;
@@ -65,7 +67,8 @@ nav{
     width: 40px;
     height: 40px;
 }
-.banner{
+/*end of the styling*/
+.banner{ /*styling for the banner section*/
     margin-top: 10vw;
     padding: 5vw;
     text-align: center;
@@ -76,7 +79,8 @@ nav{
     display: block;
     color: white;
     text-transform: uppercase;
-}
+} 
+/*styling for the header and subheader titles*/
 .highlight{
     background: rgb(33,117,37);
     background: linear-gradient(90deg, rgba(33,117,37,0.8897934173669468) 0%, rgba(47,233,38,0.7609418767507002) 51%, rgba(204,255,202,0.6937149859943977) 100%);
@@ -97,8 +101,8 @@ nav{
 .main-content #sh span{ /*styling for the specific part in the subheader in the banner section*/
     font-family: 'Montserrat', sans-serif;
     color: #789bae;
-}
-.more{
+} 
+.more{ /*styling for the position of the clickable box link below the headers in the banner section*/
     margin-top: 2em;
 }
 .more a{ /*styling for the clickable box link below the headers in the banner section*/
@@ -118,11 +122,12 @@ color: #fff8f4;
 opacity: .50;
 background-color: #144500;
 }
+/*styling  of the animation for the two divs of the dogs in the banner section*/
 .doganimation{
     display: flex;
     justify-content: center;
 }
-#dog1{
+#dog1{ /*styling for the first dog*/
     background: url(../media/images/dog1.png);
     height: 354px;
     width: 257px;
@@ -140,7 +145,7 @@ background-color: #144500;
         transform: scale(0%)
     }
 }
-#dog2{
+#dog2{ /* styling for the second dog*/
     background: url(../media/images/dog2.png);
     height: 311px;
     width: 250px;
@@ -160,11 +165,11 @@ background-color: #144500;
         transform: scale(0%)
     }
 }
-.organizationbg{
+.organizationbg{ /*styling for the organization background div of the section*/
     width: 100vw;
     height: 100vh;
 }
-.boxorg{
+.boxorg{ /*styling for the organization bacground box*/
     background-color: #D2E6D2;
     border: 4px solid;
     border-color: #51843C;
@@ -175,6 +180,7 @@ background-color: #144500;
     margin-bottom: 5em;
     text-align: center;
 }
+/*styling of the contents inside the box*/
 #titleorg{
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
@@ -188,9 +194,10 @@ background-color: #144500;
     font-family: 'Montserrat', sans-serif;
     margin-top: 10px;
 }
+/*styling of the organization's achievements container in the section*/
 .cardcontainer{
     margin-top: 10em;
-    margin-bottom: 3em;
+    margin-bottom: 5em;
     min-height: 80vh;
     justify-content: center;
     align-items: center;
@@ -232,10 +239,12 @@ background-color: #144500;
     font-family: 'Montserrat', sans-serif;
     font-size: smaller;
 }
+/*styling for the second section in page two*/
 .pagetwo{
     display: grid;
     place-items: center;
 }
+/*styling of the initiative box in page two*/
 .initiativesbox{
     background-color: #ffffff;
     margin-top: 13em;
@@ -267,6 +276,7 @@ background-color: #144500;
     margin-right: 1em;
     font-family: 'Montserrat', sans-serif;
 }
+/*styling of the organization's involvements container in the section*/
 .cardcontainer2{
     margin-top: 3em;
     min-height: 100vh;
@@ -308,12 +318,12 @@ background-color: #144500;
     margin: 20px 20px;
     transition: 0.3s;
 }
-.content-section2 .card:hover{
+.content-section2 .card:hover{ /*hover effect style*/
     transform: scale(1.1);
     transform: 0.3s;
     opacity: 0.8;
 }
-.actparsection{
+.actparsection{ /*styling of the activities and participation div in the section*/
     margin-top: 3em;
     margin-bottom: 3em;
     min-height: 100vh;
@@ -346,24 +356,48 @@ background-color: #144500;
     text-shadow: #223719 1px 1px;
     font-family: 'Montserrat', sans-serif;
 }
-#vidcontent{
+#vidcontent{ /*styling for the video in activities and participation div in the section*/
     box-shadow: #223719 4px 4px;
     width: 50%;
 }
-.page3{
+.page3{ /*styling for the page3 section in the last html page*/
     padding: 5vw;
     text-align: left;
 }
+/*styling for the section's contents*/
 .page3 article{
     font-size: large;
 }
-.about1{
+.about1{ /*styling for the first two parts of the section*/
     margin-top: 5em;
+    animation: about1 2s;
 }
-.about2{
+@keyframes about1{ /*animations for the div*/
+    0%{
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px)
+    }
+}
+.about2{ /*styling for the last two parts of the section*/
     margin-top: 5em;
+    animation: about2 2s;
 }
-.about1 h1{
+@keyframes about2{ /*animations for the div*/
+    0%{
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px)
+    }
+}
+/*styling for the text contents in the section*/
+.about1 h1{ 
     width: 50vw;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
@@ -390,7 +424,7 @@ background-color: #144500;
     text-shadow: #223719 1px 1px;
     background-color: #3860287d;
 }
-.content-section3{
+.content-section3{ /*styling of the donation links in the section*/
     margin-top: 4em;
     margin-bottom: 4em;
     display: flex;
@@ -412,26 +446,26 @@ background-color: #144500;
     transform: 0.3s;
     opacity: 0.8;
 }
-footer{
+footer{ /*styling for the footer*/
     text-align: center;
     width: 100vw;
     position: fixed;
     bottom: 0vw;
     background-color: rgb(255, 255, 255);
 }
-.icon{
+.icon{ /*styling for the sprite icons in the footer*/
 	background: url(../media/images/sprite3.png) no-repeat;
     display: inline-block;
     border: 1px solid white;
     scale: 0.9;
 	width: 66px;
 	height: 66px;
-}
+} /*sprite positions*/
 #Facebook{background-position: -439px -146px;}
 #Twitter{background-position: -66px -72px;}
 #Instagram{background-position: -290px -221px;}
 #Gmail{background-position: -365px -221px}
-
+/*responsive screen*/
 @media screen and (max-width: 992px){/*desktop*/}
 @media screen and (max-width: 480px){ /*mobile*/}
 @media screen and (max-width: 768px) { /*tablet*/
@@ -442,6 +476,9 @@ footer{
         flex-direction: column;
     }
     .content-section2{
+        flex-direction: column;
+    }
+    .content-section3{
         flex-direction: column;
     }
     nav{
