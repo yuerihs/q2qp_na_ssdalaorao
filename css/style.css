@@ -456,6 +456,10 @@ footer{ /*styling for the footer*/
     bottom: 0vw;
     background-color: rgb(255, 255, 255);
 }
+footer h5{
+    font-family: 'Montserrat', sans-serif;
+    color: #233719;
+}
 .icon{ /*styling for the sprite icons in the footer*/
 	background: url(../media/images/sprite3.png) no-repeat;
     display: inline-block;
