@@ -211,10 +211,13 @@ background-color: #144500;
     text-transform: uppercase;
     border-radius: 6px;
     text-shadow: #233719 1px 1px;
+    
 }
 .content-section{
+    width: 90%;
     display: flex;
     justify-content: center;
+    margin: auto;
     align-items: center;
     text-align: center;
 }
