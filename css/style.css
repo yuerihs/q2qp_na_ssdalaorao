@@ -197,7 +197,7 @@ background-color: #144500;
 /*styling of the organization's achievements container in the section*/
 .cardcontainer{
     margin-top: 10em;
-    margin-bottom: 5em;
+    margin-bottom: 10em;
     min-height: 80vh;
     justify-content: center;
     align-items: center;
