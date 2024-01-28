@@ -211,7 +211,6 @@ background-color: #144500;
     text-transform: uppercase;
     border-radius: 6px;
     text-shadow: #233719 1px 1px;
-    
 }
 .content-section{
     width: 90%;
@@ -225,7 +224,7 @@ background-color: #144500;
     background-color: #ffffff;
     flex: 1;
     margin: 20px 20px;
-    box-shadow: 3px 3px black;
+    box-shadow: 3px 3px #233719;
 }
 .card img{
     width: 100%;
@@ -467,7 +466,8 @@ footer h5{
     scale: 0.9;
 	width: 66px;
 	height: 66px;
-} /*sprite positions*/
+} 
+/*sprite positions*/
 #Facebook{background-position: -439px -146px;}
 #Twitter{background-position: -66px -72px;}
 #Instagram{background-position: -290px -221px;}
